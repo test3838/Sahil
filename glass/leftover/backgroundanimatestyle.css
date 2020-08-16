@@ -1,0 +1,325 @@
+
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
+  /* font-family: 'Oswald', sans-serif; */
+
+}
+body{
+  background-color: #fff;
+    font-family: "Open Sans",Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #fff8;
+  width: 100%;
+  height: 85px;
+  position: fixed;
+}
+#logo{
+  width: 300px;
+  height:84px;
+  margin-top: -0.5px;
+  margin-left: 20px;
+  margin-right: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Needed to position the navbar */
+  position: relative;
+
+}
+.nav-links{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+.nav-links li a:hover{
+  background-color: #fff8;
+
+}
+.nav-links li a{
+  margin-right: 20px;
+  text-decoration: none;
+  color: #000;
+}
+#active{
+  color: red;
+
+}
+
+ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+  left: 0;
+  margin-left: 59.4rem;
+  list-style: none;
+  margin-top: 0px;
+  background-color: #fff8;
+  width:300px;
+  height: 40vh;
+}
+
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+  margin-bottom: 15px;
+}
+ul li ul li:hover{
+  background-color: #fff8
+}
+
+.hellos{
+  float: left;
+  width: 40%;
+  margin-left:5px;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+
+}
+.hello{
+  width: 40%;
+  float: left;
+  margin-top: 2rem;
+  margin-left:5px;
+
+}
+/* Toggle Bar */
+.burger{
+  display: none;
+  cursor: pointer;
+}
+.burger div{
+width: 25px;
+height: 2px;
+background-color: black;
+margin:5px;
+}
+
+.bg-img {
+  /* background-image: url("firstcover.jpg"); */
+  min-height: 380px;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Needed to position the navbar */
+  position: relative;
+  height: 96vh;
+}
+.container{
+  text-align: center;
+  padding-top: 13rem;
+  padding-right: 0rem;
+  padding-bottom: 9rem;
+  padding-left: 0px;
+}
+.headline{
+    font-weight: 700;
+    font-size: 80px;
+    font-display: block;
+    color: #ffffff!important;
+    text-align: center;
+    text-shadow: 0em 0.1em 0.1em rgba(0,0,0,0.4)
+
+}
+h2{
+  font-size: 26px;
+  color: #ffffff!important;
+  letter-spacing: 2px;
+  text-align: center;
+  text-shadow: 0em 0.1em 0.1em #9b9b9b;
+}
+.btn{
+    position: relative;
+    padding: .3em 1em;
+    border: 2px solid;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.7em!important;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    transition: all .2s;
+
+}
+
+.btn-1{
+    color: #FFFFFF!important;
+    border-width: 0px!important;
+    background-color: #ED2224;
+    transition: all 300ms ease 0ms;
+    display: inline-block;
+    margin-top: 14px;
+    padding: 14px;
+}
+.btn-1:hover{
+  background-color: red;
+  transition: 0.9s ;
+}
+/*Part1 Ends Here*/
+
+
+/*Apply styles after scroll*/
+.scrolling-active{
+    background-color: #fff;
+    box-shadow: 0 3px 1rem rgba(0,0,0,.1);
+}
+
+.scrolling-active .nav{
+    height: 50px;
+}
+
+.scrolling-active .nav a{
+    color: #313131;
+}
+.scrolling-active .nav #logo{
+  height: 50px;
+}
+.scrolling-active .nav-link::after{
+    background-color: #313131;
+}
+
+/*Apply styles after scroll ends Here*/
+
+/* S;ide Show */
+
+slider{
+  display: block;
+  width: 100%;
+  height: 96vh;
+  background-color: #1f2f3f;
+  overflow: hidden;
+  position: absolute;
+}
+
+slider > *{
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  background-color: #1f2f3f;
+  overflow: hidden;
+  animation: slide 12s infinite;
+}
+
+slide:nth-child(1){
+  left: 0%;
+  animation-delay: -1s;
+  background-image: url('logo.png');
+  background-size: cover;
+  background-position: center;
+}
+slide:nth-child(2){
+  animation-delay: 2s;
+  background-image: url('card2.jpg');
+  background-size: cover;
+  background-position: center;
+  left: 100%;
+
+}
+slide:nth-child(3){
+  animation-delay: 5s;
+  background-image: url('card1.jpg');
+  background-size: cover;
+  background-position: center;
+  left: 100%;
+
+}
+slide:nth-child(4){
+  left: 100%;
+  animation-delay: 8s;
+  background-image: url('facebook.png');
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+slide .p {
+  font-family: sans-serif;
+  font-size: 30px;
+  text-align: left;
+  display: inline-block;
+  width: 100%;
+  margin-top: 20rem;
+  margin-left: 20rem;
+  color:#fff;
+
+
+}
+slide .p span > * {
+  color:red;
+  font-size:30px;
+  /* margin-bottom: 2rem; */
+  text-align: center;
+}
+.buttons {
+  border-radius: 40px;
+  padding: 10px;
+
+}
+a{
+  text-decoration: none;
+  color:red;
+
+}
+
+/* Slide Show */
+
+
+
+/* Animations */
+@keyframes slide {
+  0%{
+    left: 100%;
+    width: 100%;
+  }
+  15%{
+    left: 0%;
+  }
+  30%{
+    left: 0%;
+
+  }
+  45%{
+    left: -100%;
+    width: 100%;
+  }
+  50.0001%{
+    left: 100%;
+    /* width: 0%; */
+    width: 0%;
+
+  }
+  100%{
+    left:100%;
+    width: 0%;
+
+  }
+}

@@ -1,0 +1,1089 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+body {
+    font-family: "Open San", Arial, sans-serif;
+    font-size: 14px;
+    /* color: ; */
+}
+.feedback {
+  background-color:black;
+  border-radius: 40px;
+  padding: 10px 30px;
+  color: white;
+}
+#mybutton {
+  position: fixed;
+  /* bottom: 4px; */
+  top: 35rem;
+  right: 10px;
+  color: white;
+}
+
+/* Navbar */
+nav{
+   height: 90px;
+   background:#0003;
+   position: fixed;
+   /* position: absolute; */
+
+   /* float: right; */
+   width: 100%;
+   font-weight: 200;
+
+  }
+.nav img{
+  width: 150px;
+  position: absolute;
+  top:2px;
+  height: 70px;
+  left: 12%;
+  font-weight: 200;
+
+}
+.nav-links{
+  float: right;
+  margin-right: 50px;
+  font-weight: 200;
+
+}
+nav ul .navlinking{
+  display: inline-block;
+  /* line-height: 50px; */
+  margin-right:2rem;
+  margin-top:2rem;
+  text-align: center;
+  list-style-type: none;
+
+  font-weight: 200;
+}
+
+nav ul li a{
+  position: relative;
+  font-size: 13px;
+  color: white;
+  font-weight: 400;
+  /* padding: 5px 0; */
+  text-transform: uppercase;
+
+}
+nav ul li a:before{
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: white;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .4s linear;
+
+}
+
+nav ul li a:hover:before{
+  transform: scaleX(1);
+  transform-origin: left;
+  list-style-type: none;
+
+}
+label #navbutton,
+label #cancel{
+  color: white;
+  font-size: 30px;
+  float:right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+#active {
+    color: red;
+}
+
+ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    left: 0;
+    margin-left: 61.8rem;
+    list-style: none;
+    margin-top: 0.1rem;;
+    background-color: #0007;
+    width: 350px;
+    height: 44vh;
+
+    /* list-style-type: none; */
+
+}
+
+ul li:hover>ul,
+ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+ul li ul li {
+    clear: both;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+ul li ul li:hover {
+    background-color: #fff8;
+}
+
+.hellos {
+    float: left;
+    width: 40%;
+    margin-left: 18px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    text-align: left;
+}
+
+.hello {
+    width: 50%;
+    float: left;
+    margin-top: 2rem;
+    margin-left:  0.65rem;
+    color: red;
+    text-align: left;
+
+}
+
+.drophover {
+  background-color: #fff0;
+  font-size: 13px;
+
+}
+.drophover:hover{
+  background-color: none;
+}
+
+ul li ul li .dropdown:hover{
+  background-color: none;
+  /* font-size: 10px; */
+
+}
+
+/* Navbar */
+
+
+
+/* Part1 Starts Here */
+.bg-img {
+    background-image: url("https://bendheim.com/wp-content/uploads/2016/10/263surfside-Bendheim-channel-glass-walls-7.jpg");
+    min-height: 380px;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Needed to position the navbar */
+    position: relative;
+    height: 96vh;
+}
+
+
+
+.container {
+    text-align: center;
+    padding-top: 26rem;
+    padding-right: 3rem;
+    /* padding-bottom: 9rem; */
+    padding-left: 0px;
+}
+
+.headline {
+    font-weight: 300;
+    font-size: 80px;
+    font-display: block;
+    color: #ffffff!important;
+    text-align: left;
+    margin-left: 2rem;
+    text-shadow: 0em 0.1em 0.1em rgba(0, 0, 0, 0.4)
+}
+
+/* h2 {
+    font-size: 26px;
+    color: #ffffff!important;
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 0em 0.1em 0.1em #9b9b9b;
+} */
+
+
+
+/*Part1 Ends Here*/
+
+
+.scrolling-active  {
+    background-color: #0007;
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, .1);
+}
+
+.scrolling-active .nav {
+    height: 70px;
+    background-color: #0007;
+}
+
+.scrolling-active .nav a{
+    color:white;
+}
+
+.scrolling-active .nav #logo {
+  margin-top: 0.4rem;
+    height:50px;
+}
+
+.scrolling-active .nav-link::after {
+    background-color: #313131;
+}
+
+
+
+.scrolling-active {
+    background-color: #fff;
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, .1);
+}
+
+.scrolling-active .nav {
+    height: 70px;
+}
+
+.scrolling-active .nav a {
+    color:white;
+}
+
+.scrolling-active .nav #logo {
+  margin-top: 0.4rem;
+    height:50px;
+}
+
+.scrolling-active .nav-link::after {
+    background-color: #313131;
+}
+
+
+
+
+
+
+
+
+
+/* Slide Show Starts Here*/
+
+slider{
+  display: block;
+  width: 100%;
+  height: 96vh;
+  background-color: #1f2f3f;
+  overflow: hidden;
+  position: absolute;
+  font-weight: 100;
+
+}
+
+slider > *{
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  background-color: #1f2f3f;
+  overflow: hidden;
+  animation: slide 12s infinite;
+  font-weight: 100;
+
+}
+
+slide:nth-child(1){
+  left: 0%;
+  animation-delay: -1s;
+  /* background-image: url('images/slide1.jpg'); */
+  background-image: url("wallpanelingglass/product/Modern corridor, hallway & stairs by de panache - interior architects modern _ homify.png");
+
+  background-size: cover;
+  background-position: center;
+}
+slide:nth-child(2){
+  animation-delay: 2s;
+  background-image: url('etchedglass/product/mainetching.PNG');
+  background-size: cover;
+  background-position: center;
+  left: 100%;
+
+}
+slide:nth-child(3){
+  animation-delay: 5s;
+  background-image: url('fabricglass/product/fabric1.PNG');
+  background-size: cover;
+  background-position: center;
+  left: 100%;
+
+}
+slide:nth-child(4){
+  left: 100%;
+  animation-delay: 8s;
+  background-image: url('stainedglass/product/stained glass 6.PNG');
+  background-size: cover;
+  background-position: center;
+}
+
+
+slide .p {
+    font-family: sans-serif;
+    font-size: 50px;
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+    margin-top: 15rem;
+    margin-left: 10rem;
+    color: #fff;
+    /* font-weight: 3002px; */
+    text-transform: uppercase;
+}
+
+slide .p span {
+    /* color:red; */
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.buttons {
+    margin-top: 2rem;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.buttons:hover{
+    margin-top: 2rem;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: rgba(0, 255,255, 0.5);
+}
+
+.buttons a {
+    text-align: center;
+    color: #eee;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+a{
+  text-decoration: none;
+
+}
+/* Slides Animation Completes Here */
+
+/* Part3 Products Starts Here */
+/* Part3 Products Starts Here */
+
+.container3{
+  height: 140vh;
+  font-style: serif;
+  background-color:#fff;
+  padding-top: 50px;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+
+.card1,.card2,.card3,.card4{
+   margin-left: 29px;
+  margin-right: 29px;
+  margin-top: 30px;
+  float: left;
+  width: 20%;
+  /* border-radius: 10px; */
+}
+/* .card1:hover,.card2:hover,.card3:hover,.card4:hover{
+  margin-left: 29px;
+ margin-right: 29px;
+ margin-top: 30px;
+ float: left;
+ /* width: 23%; */
+
+.images3{
+  height:250px ;
+  width:250px;
+  border-radius: 2px;
+}
+.btns{
+  margin-top: 3rem;
+  margin-right: 6.5rem;
+  text-align: center;
+  border-color: grey;
+  opacity: 1;
+  justify-content:center;
+  padding:0.5rem;
+-ms-transform: translateX(60%);
+transform: translateX(40%);
+
+}
+
+.btns:hover{
+ background-color: white;
+ transition: 0.9s;
+}
+.caption{
+  padding-right: 2rem;
+  margin-top: 2rem;
+  color:red;
+  font-size: 13px;
+  font-weight: 700;
+
+}
+
+/* Part3 Product Ends Here */
+
+/* Part3 Product Ends Here */
+
+
+
+/* Part2 Ends Here */
+
+
+
+
+
+
+
+/* Footer Starts Here */
+
+.container2 {
+    width: 100%;
+    margin: auto;
+    height: auto;
+    background-color:rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+    text-align: center;
+    height: 50vh;
+    color: #eee;
+    font-weight: 240;
+    /* font-family: Oswald Helved; */
+    /* overflow: hidden; */
+}
+
+.container2 .left1 {
+    float: left;
+    width: 30%;
+    margin-top: 60px;
+}
+
+.container2 .left25 {
+    float: left;
+    width: 25%;
+    margin-top: 60px;
+}
+
+.container2 .right25 {
+    float: left;
+    width: 20%;
+    margin-top: 60px;
+}
+
+.container2 .right1 {
+    float: left;
+    width: 25%;
+    margin-top: 60px;
+}
+
+
+/* For first lefy  and Second left*/
+
+.texts p a,
+.texts1 p a {
+    color: #eee;
+    font-family: serif;
+    font-weight: 20;
+}
+
+.texts {
+    text-align: left;
+    margin-left: 10rem;
+    margin-top: -0.6rem;
+}
+
+
+/* margin-bottom: 30px; */
+
+.texts p,
+.texts1 p,
+.texts2 p {
+    margin-bottom: 18px;
+    font-family: serif;
+    font-weight: 20;
+}
+
+
+/* For Second Left */
+
+.texts1 {
+    text-align: left;
+    margin-left: 3rem;
+    margin-top: -1rem;
+}
+
+
+/* For Second Right */
+
+.texts2 {
+    text-align: left;
+    margin-top: -1rem;
+}
+
+
+/* First Right */
+
+.logos {
+    margin-right: 3rem;
+    margin-top: 0.5rem;
+    radius: 20px;
+    /* border-radius: 50%; */
+}
+
+.images2 {
+    border-radius: 50%;
+}
+
+
+/* Last Footer */
+
+.End {
+    background-color: black;
+    padding: 18px;
+}
+
+.End a {
+    justify-content: space-between;
+    margin-left: 10rem;
+    font-size: 18px;
+    color: #ccc;
+}
+
+
+
+
+/* MediaQuery For Navbar */
+
+@media (max-width:1118px) {
+  nav img{
+    left:8%;
+  }
+}
+@media (max-width:944px) {
+  nav img{
+    left: 6%;
+    top:20px;
+    width: 130px;
+  }
+  nav ul .navlinking a{
+    font-size: 17px;
+  }
+
+/* Media Query FOr Navnar Ends Here */
+
+/* Media Query FOr Part1 Starts here */
+  .bg-img {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      /* Needed to position the navbar */
+      position: relative;
+      /* height: 92vh; */
+  }
+
+  .container {
+      text-align: center;
+      padding-top: 26rem;
+      padding-right: 3rem;
+      /* padding-bottom: 9rem; */
+      padding-left: 0px;
+  }
+
+  .headline {
+      font-weight: 300;
+      font-size: 80px;
+      font-display: block;
+      color: #ffffff!important;
+      text-align: left;
+      margin-left: 2rem;
+      text-shadow: 0em 0.1em 0.1em rgba(0, 0, 0, 0.4)
+  }
+
+  .subheadline {
+      display: none;
+  }
+  h2 {
+      font-size: 20px;
+      text-align: center;
+  }
+
+  .btn,
+  .btn-1 {
+      /* padding-left: 10px; */
+      /* padding-right: 0px; */
+      font-size: 11px;
+      margin-top: 20px;
+      padding: 10px;
+  }
+  /* Part1 Ends Here */
+
+
+  /* Slide Show Starts Here*/
+
+  slider{
+    display: block;
+    width: 100%;
+    height: 96vh;
+    background-color: #1f2f3f;
+    overflow: hidden;
+    position: absolute;
+    font-weight: 100;
+
+  }
+
+  slider > *{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-color: #1f2f3f;
+    overflow: hidden;
+    animation: slide 12s infinite;
+    font-weight: 100;
+
+  }
+
+  slide:nth-child(1){
+    left: 0%;
+    animation-delay: -1s;
+    background-size: cover;
+    background-position: center;
+  }
+  slide:nth-child(2){
+    animation-delay: 2s;
+    background-size: cover;
+    background-position: center;
+    left: 100%;
+
+  }
+  slide:nth-child(3){
+    animation-delay: 5s;
+    background-size: cover;
+    background-position: center;
+    left: 100%;
+
+  }
+  slide:nth-child(4){
+    left: 100%;
+    animation-delay: 8s;
+    background-size: cover;
+    background-position: center;
+  }
+
+  slide .p {
+    font-family: sans-serif;
+    font-size: 30px;
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+    margin-top: 20rem;
+    margin-left: 3rem;
+    color:#fff;
+    /* font-weight: 10px; */
+  }
+
+  slide .p span {
+    /* color:red; */
+    font-size:20px;
+    text-align: center;
+    font-weight: 100;
+    margin-top: 10rem;
+  /* font-style */
+  }
+  .buttons {
+    margin-top: 3rem;
+    border-radius: 20px;
+    padding: 10px;
+    background-color:#eee8;
+
+  }
+  .buttons a{
+      text-align: center;
+      color: red;
+  }
+  a{
+    text-decoration: none;
+
+  }
+  /* Slides Animation Completes Here */
+
+
+
+  /* Part3 MediaQuery For Products Starts Here*/
+
+
+        .container3{
+          height: 500vh;
+          font-style: serif;
+          text-align: center;
+
+        }
+        .heading{
+          font-size: 30px;
+          font-weight: 100;
+        }
+        .beforeproduct .subheading{
+          font-size: 20px;
+          font-weight:-1000rem;
+          text-align: center;
+        }
+        .card1,.card2,.card3,.card4{
+           margin-left: 20px;
+          /* margin-right: 20rem; */
+          margin-top: 30px;
+          float: left;
+          width: 100%;
+          /* border-radius: 10px; */
+        }
+        .images3{
+          height:300px ;
+          width:300px;
+          border-radius: 2px;
+          margin-right: 3rem;
+
+        }
+         /* .paragraph{
+          margin-top: 1rem;
+          margin-right: 21rem;
+          text-align: center;
+          border-color: grey;
+          opacity: 1;
+          justify-content:center;
+          padding:0.5rem;
+        -ms-transform: translateX(60%);
+        transform: translateX(40%); */
+        /* border-radius: 20px; */
+
+        /* } */
+        /* .btn:hover{
+         background-color: #ddd;
+         transition: 0.6s;
+        } */
+
+        /* Part3 MediaQuery for Product Ends Here */
+
+
+
+
+  /* Media Query For Footer Starts Here */
+  .container2 {
+      width: 100%;
+      height: 120vh;
+      /* position:fixed; */
+  }
+  .container2 .left1 {
+      width: 100%;
+      margin-top: 6rem;
+  }
+  .container2 .left25 {
+      width: 100%;
+      text-align: left;
+  }
+  .container2 .right25 {
+      width: 100%;
+      margin-top: 5rem;
+  }
+  .container2 .right1 {
+      float: left;
+      width: 100%;
+  }
+  .texts1,
+  .texts2,
+  .texts {
+      margin-left: 3rem;
+  }
+  /* First Right */
+  .logos {
+      text-align: left;
+      margin-left: 3rem;
+  }
+  /* Media Query for footer ends here */
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MediaQuery For Mobile */
+@media (max-width:860px) {
+  label #navbutton{
+    display: block;
+    margin-left: 34rem;
+    float: right;
+  }
+  ul{
+    position: fixed;
+
+    width: 70%;
+    height: 60vh;
+    background-color: #0008;
+    top: 90px;
+
+    left: -100%;
+    text-align: center;
+    transition:all .5s;
+  }
+
+  .scrolling-active .nav ul{
+        /* height0px; */
+      top:70px;
+    }
+  nav ul .navlinking{
+    display: block;
+    margin: 50px 0;
+    line-height:8px;
+  }
+
+  nav ul .navlinking a{
+    font-size: 20px;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  #check:checked ~ label #navbutton{
+    display: none;
+  }
+  #check:checked ~ label #cancel{
+    display:block;
+  }
+/* Media Query For Navbar Ends Here */
+
+  /* Part1 Media Query Starts Here */
+  .bg-img {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      /* Needed to position the navbar */
+      position: relative;
+      /* height: 92vh; */
+  }
+
+  .container {
+      padding-top: 26rem;
+      padding-right: 3rem;
+      /* padding-bottom: 9rem; */
+      padding-left: 0px;
+  }
+
+  .headline {
+      font-weight: 300;
+      font-size: 80px;
+      font-display: block;
+      color: #ffffff!important;
+      text-align: left;
+      margin-left: 2rem;
+      text-shadow: 0em 0.1em 0.1em rgba(0, 0, 0, 0.4)
+  }
+
+
+  slide .p {
+        font-family: sans-serif;
+        font-size: 30px;
+        text-align: left;
+        display: inline-block;
+        width: 100%;
+        margin-top: 20rem;
+        margin-left: 3rem;
+        color: #fff;
+        font-size: 26px;
+        font-weight: 500;
+    }
+    slide .p span {
+        /* color:red; */
+        font-size: 20px;
+        text-align: center;
+        font-weight: 100;
+        margin-top: 10rem;
+        /* font-style */
+    }
+  .headline {
+      font-size: 35px;
+      color: white;
+      font-weight: bolder;
+      text-align: center;
+  }
+  .subheadline {
+      display: none;
+  }
+  /* h2 {
+      font-size: 15px;
+      text-align: center;
+  } */
+  .btn,
+  .btn-1 {
+      /* padding-left: 10px; */
+      /* padding-right: 0px; */
+      font-size: 10px;
+      margin-top: 30px;
+      padding: 8px;
+  }
+  /* Part1 Ends Here */
+
+    /* Part3 MediaQuery For Products Starts Here*/
+
+        /* Part3 MediaQuery For Products Starts Here*/
+
+
+        .container3{
+          height: 400vh;
+          font-style: serif;
+          text-align: center;
+
+        }
+        .heading{
+          font-size: 30px;
+          font-weight: 100;
+        }
+        .beforeproduct .subheading{
+          font-size: 20px;
+          font-weight:-1000rem;
+          text-align: center;
+        }
+        .card1,.card2,.card3,.card4{
+           margin-left: 20px;
+          /* margin-right: 20rem; */
+          margin-top: 30px;
+          float: left;
+          width: 100%;
+          /* border-radius: 10px; */
+        }
+        .images3{
+          height:200px ;
+          width:200px;
+          border-radius: 2px;
+          margin-right: 3rem;
+
+        }
+        .paragraph{
+          margin-top: 1rem;
+          margin-right: 17rem;
+          text-align: center;
+          border-color: grey;
+          opacity: 1;
+          justify-content:center;
+          padding:0.5rem;
+        /* -ms-transform: translateX(90%); */
+        transform: translateX(100%);
+        }
+
+        /* Part3 MediaQuery for Product Ends Here */
+
+
+
+
+
+
+
+
+  /* Media Query For Footer Starts Here */
+  .container2 {
+      width: 100%;
+      height: 120vh;
+      /* position:fixed; */
+  }
+  .container2 .left1 {
+      width: 100%;
+      margin-top: 6rem;
+  }
+  .container2 .left25 {
+      width: 100%;
+      text-align: left;
+  }
+  .container2 .right25 {
+      width: 100%;
+      margin-top: 5rem;
+  }
+  .container2 .right1 {
+      float: left;
+      width: 100%;
+  }
+  .texts1,
+  .texts2,
+  .texts {
+      margin-left: 3rem;
+  }
+  /* First Right */
+  .logos {
+      text-align: left;
+      margin-left: 3rem;
+  }
+  .images2{
+    width: 32px;
+    height: 32px;
+      margin-right: 3px;
+  }
+
+  /* Media Query for footer ends here */
+
+
+
+}
+/* Media Query For Navbar Ends Here */
+
+@keyframes slide {
+  0%{
+    left: 100%;
+    width: 100%;
+  }
+  15%{
+    left: 0%;
+  }
+  30%{
+    left: 0%;
+
+  }
+  45%{
+    left: -100%;
+    width: 100%;
+  }
+  50.0001%{
+    left: 100%;
+    /* width: 0%; */
+    width: 0%;
+
+  }
+  100%{
+    left:100%;
+    width: 0%;
+
+  }
+}

@@ -1,0 +1,1405 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    text-decoration: none;
+}
+body {
+    background-color: #fff;
+    font-family: "Open San", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    color: #666;
+}
+.feedback {
+  background-color:black;
+  border-radius: 40px;
+  padding: 10px 30px;
+  color: white;
+}
+#mybutton {
+  position: fixed;
+  /* bottom: 4px; */
+  top: 35rem;
+  right: 10px;
+  color: white;
+}
+/* Navbar */
+nav{
+   height: 90px;
+   background:#0007;
+   position: fixed;
+   /* float: right; */
+   width: 100%;
+  }
+.nav img{
+  width: 150px;
+  position: absolute;
+  top:2px;
+  height: 70px;
+  left: 12%;
+
+}
+.nav-links{
+  float: right;
+  margin-right: 50px;
+
+}
+nav ul .navlinking{
+  display: inline-block;
+  /* line-height: 50px; */
+  margin-right:2rem;
+  margin-top:2rem;
+  text-align: center;
+}
+
+nav ul li a{
+  position: relative;
+  font-size: 13px;
+  color: white;
+  font-weight: 400;
+  /* padding: 5px 0; */
+  text-transform: uppercase;
+
+}
+nav ul li a:before{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: white;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .4s linear;
+}
+
+nav ul li a:hover:before{
+  transform: scaleX(1);
+  transform-origin: left;
+
+}
+label #navbutton,
+label #cancel{
+  color: white;
+  font-size: 30px;
+  float:right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+#active {
+    color: red;
+}
+ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    left: 0;
+    margin-left: 61.8rem;
+    list-style: none;
+    margin-top: 0.1rem;;
+    background-color: #0007;
+    width: 350px;
+    height: 44vh;
+
+    /* list-style-type: none; */
+
+}
+
+ul li:hover>ul,
+ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+ul li ul li {
+    clear: both;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+ul li ul li:hover {
+    background-color: #fff8;
+}
+
+.hellos {
+    float: left;
+    width: 40%;
+    margin-left: 18px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    text-align: left;
+}
+
+.hello {
+    width: 50%;
+    float: left;
+    margin-top: 2rem;
+    margin-left:  0.65rem;
+    color: red;
+    text-align: left;
+
+}
+
+.drophover {
+  background-color: #fff0;
+  font-size: 13px;
+
+}
+.drophover:hover{
+  background-color: none;
+}
+
+ul li ul li .dropdown:hover{
+  background-color: none;
+  /* font-size: 10px; */
+
+}
+
+/* Navbar */
+
+/* Part1 Starts Here */
+.bg-img {
+    /* Center and scale the image nicely */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* Needed to position the navbar */
+    position: relative;
+}
+
+
+
+.container {
+    text-align: left;
+    padding-top: 3rem;
+    padding-right: 0rem;
+    padding-bottom: 9rem;
+    padding-left: 0px;
+    height: 20vh;
+  background-color: grey;
+}
+.heads{
+  margin-top: 5rem;
+  margin-left: 5rem;
+  font-weight: 300;
+  font-display: block;
+  color: #ffffff!important;
+  font-size: 20px;
+}
+.headline {
+  margin-top: -1rem;
+  text-align: left;
+    font-weight: 700;
+    font-size: 50px;
+    font-display: block;
+    color: #ffffff!important;
+    text-shadow: 0em 0.1em 0.1em rgba(0, 0, 0, 0.4);
+   -webkit-animation: slidings 0.5s forwards;
+   -webkit-animation-delay: 2s;
+   animation: slidings 0.5s forwards;
+   animation-delay: 2s;
+   margin-left: 4.6rem;
+}
+
+.subheadline,h2 {
+    font-size: 26px;
+    color: #ffffff!important;
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 0em 0.1em 0.1em #9b9b9b;
+}
+
+@-webkit-keyframes slidings {
+    100% { left: 0; }
+}
+
+@keyframes slidings {
+    100% { left: 0; }
+}
+
+
+.btn {
+    position: relative;
+    padding: .3em 1em;
+    border: 2px solid;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.7em!important;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    transition: all .2s;
+}
+
+.btn-1 {
+    color: #FFFFFF!important;
+    border-width: 0px!important;
+    background-color: #ED2224;
+    transition: all 300ms ease 0ms;
+    display: inline-block;
+    margin-top: 14px;
+    padding: 10px;
+}
+
+.btn-1:hover {
+    background-color: red;
+    transition: 0.9s;
+}
+
+
+/*Part1 Ends Here*/
+
+
+.scrolling-active {
+    background-color: #0007;
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, .1);
+}
+
+.scrolling-active .nav {
+    height: 70px;
+    background-color: #0007;
+}
+
+.scrolling-active .nav a {
+    color:white;
+}
+
+.scrolling-active .nav #logo {
+  margin-top: 0.4rem;
+    height:50px;
+}
+
+.scrolling-active .nav-link::after {
+    background-color: #313131;
+}
+
+
+
+
+/* Part2 Starts Here */
+
+/*Part2 Starts Here*/
+
+.wrappers {
+    overflow: hidden;
+    background: #0009;
+    font-weight:500;
+
+}
+
+#container1 {
+    width: 100%;
+    margin: auto;
+    height: auto;
+    overflow: auto;
+    text-align: center;
+    height: 120vh;
+    color: #fff;
+    background-color:rgba(0, 0, 0, 0.6);
+
+    /* overflow: hidden; */
+}
+
+#container1 .lefts {
+    float: left;
+    width: 40%;
+    font-weight:500;
+}
+
+.image1 {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    height: 80%;
+    width: 70%;
+    text-align: center;
+}
+
+
+#container1 .rights {
+    float: left;
+    width: 60%;
+    margin-top: 90px;
+    font-weight:500;
+
+}
+
+.lines1 {
+    background-color: red;
+    height: 2px;
+    width: 60px;
+}
+
+.headers {
+    padding-top: 2rem;
+    padding-right: 4rem;
+    /* padding-left: 3rem; */
+    padding-bottom: 3rem;
+    text-align: left;
+}
+
+.master,
+.masterinner {
+    font-size: 20px;
+    text-align: left;
+    font-weight: 100;
+    padding-bottom: 0.4rem;
+}
+
+h3 {
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 2.5rem;
+    padding-top: 0.4rem;
+}
+
+.masterinner1,
+.masterinner2,
+.masterinner3,
+.masterinner4 {
+    font-size: 15px;
+    text-align: left;
+    font-weight: 400;
+    padding-bottom: 1.5rem;
+    text-align:justify;
+
+}
+
+.rowbtn {
+    text-align: left;
+}
+
+.btn-2,
+.btn-3 {
+    color: red;
+    padding:10px;
+    margin-right: 4rem;
+}
+
+.btn-2:hover,
+.btn-3:hover {
+    background-color: red;
+    transition: 0.9s;
+}
+
+.btn2,
+.btn3 {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* Part2 Ends Here */
+
+
+
+/* Part3 Products Starts Here */
+
+.container3 {
+    /* height: 190vh;
+    font-style: serif;
+    /* background-color: #0009; */
+    /* background-color:#111; */
+    /* background-color: rgba(0,0,0,0.9); */
+    /* padding-top: 50px; */
+    /* text-align: center; */
+    /* position: relative; */
+    /* color:#fff; */
+    height: 100vh;
+    font-style: serif;
+    background-color:rgba(255,255,255,1);
+    padding-top: 50px;
+    text-align: center;
+    color:black;
+}
+
+.heading {
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.subheading {
+    font-size: 20px;
+    font-weight: -1000rem;
+}
+
+.card1,
+.card2{
+    margin-left: 60px;
+    /*margin-right: 29px;*/
+    margin-top: 30px;
+    float: left;
+    width: 40%;
+    /* border-radius: 10px; */
+}
+
+.images3 {
+    height: 300px;
+    width: 300px;
+    border-radius: 2px;
+}
+
+.btns {
+    margin-top: 2rem;
+    margin-right: 6rem;
+    text-align: center;
+    border-color: grey;
+    opacity: 1;
+    justify-content: center;
+    padding: 0.57rem;
+    width: 222px;
+    /* border-radius: 20px; */
+    -ms-transform: translateX(60%);
+    transform: translateX(25%);
+    /* background-color:rgba(0, 0, 0, 0.8); */
+    background-color:rgba(0, 0, 0, 1);
+
+
+}
+
+.btns:hover {
+    background-color:rgba(0,0,0,1);
+    transition: 0.6s;
+}
+
+.namings{
+  color:#fff;
+  text-align: center;
+}
+.caption{
+  /* padding-right: 2rem;
+*/
+  color:red;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+
+/* Part3 Product Ends Here */
+
+
+/* Part4 COntact and Map Starts Here */
+
+.container4 {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('images/slide2.jpg');
+    background-size:cover;
+    overflow: hidden;
+
+}
+
+.container4 .leftmost {
+    float: left;
+    width: 40%;
+    margin-top: 30px;
+    background-color: #0008;
+    margin-left: 3rem;
+    height: 92vh;
+    overflow: hidden;
+
+
+}
+
+.container4 .rightmost {
+    float: left;
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 1rem;
+    background-color: #0008;
+    margin-right: 3rem;
+    height: 92vh;
+    overflow: hidden;
+
+}
+
+.headings{
+  margin-top: 1rem;
+  margin-bottom: -1.4rem;
+  color: #fff;
+  text-overflow: inherit;
+  text-align: center;
+  text-transform: uppercase;
+}
+.contactform {
+    color: #000;
+    text-align: left;
+    margin-left: 8rem;
+    margin-right: 8rem;
+}
+
+.messages textarea{
+
+    margin: 10px 0;
+    background: transparent;
+    border: 0px;
+    border-bottom: 2px solid #c5ecfd;
+    padding: 10px;
+    color: #c5ecfd;
+    width: 100%;
+}
+textarea{
+  width: 100%;
+}
+.inputs {
+    margin-top: 30px;
+}
+
+.inputs label input {
+    margin: 10px 0;
+    background: transparent;
+    border: 0px;
+    border-bottom: 2px solid #c5ecfd;
+    padding: 10px;
+    color: #c5ecfd;
+    width: 100%;
+}
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #c5ecfd;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #c5ecfd;
+}
+:-ms-input-placeholder {
+  color: #c5ecfd;
+}
+
+#my-form-button{
+    background: #39b7dd;
+   text-align: center;
+   padding: 15px;
+   border-radius: 5px;
+   color: #fff;
+   cursor: pointer;
+   text-transform: uppercase;
+   width: 106%;
+   margin-top: 2rem;
+}
+#my-form-status{
+  margin-top:13px;
+  font-size: 1.5rem;
+  color:white;
+  text-align: center;
+}
+/* Part4 ENds Here */
+
+
+/* Footer Starts Here */
+
+.container2 {
+    width: 100%;
+    margin: auto;
+    height: auto;
+    /* background: grey; */
+    background-color:rgba(0, 0, 0, 0.9);
+
+    overflow: hidden;
+    text-align: center;
+    height: 50vh;
+    color: #eee;
+    font-weight: 240;
+    /* font-family: Oswald Helved; */
+    /* overflow: hidden; */
+}
+
+.container2 .left1 {
+    float: left;
+    width: 30%;
+    margin-top: 60px;
+}
+
+.container2 .left25 {
+    float: left;
+    width: 25%;
+    margin-top: 60px;
+}
+
+.container2 .right25 {
+    float: left;
+    width: 20%;
+    margin-top: 60px;
+}
+
+.container2 .right1 {
+    float: left;
+    width: 25%;
+    margin-top: 60px;
+}
+
+
+/* For first lefy  and Second left*/
+
+.texts p a,
+.texts1 p a {
+    color: #eee;
+    font-family: serif;
+    font-weight: 20;
+}
+
+.texts {
+    text-align: left;
+    margin-left: 10rem;
+    margin-top: -0.6rem;
+}
+
+
+/* margin-bottom: 30px; */
+
+.texts p,
+.texts1 p,
+.texts2 p {
+    margin-bottom: 18px;
+    font-family: serif;
+    font-weight: 20;
+}
+
+
+/* For Second Left */
+
+.texts1 {
+    text-align: left;
+    margin-left: 3rem;
+    margin-top: -1rem;
+}
+
+
+/* For Second Right */
+
+.texts2 {
+    text-align: left;
+    margin-top: -1rem;
+}
+
+
+/* First Right */
+
+.logos {
+    margin-right: 3rem;
+    margin-top: 0.5rem;
+    radius: 20px;
+    /* border-radius: 50%; */
+}
+
+.images2 {
+    border-radius: 50%;
+}
+
+
+/* Last Footer */
+
+.End {
+    background-color: black;
+    padding: 18px;
+}
+
+.End a {
+    justify-content: space-between;
+    margin-left: 10rem;
+    font-size: 18px;
+    color: #ccc;
+}
+
+
+
+
+/* MediaQuery For Navbar */
+
+@media (max-width:1200px) {
+  nav img{
+    left:8%;
+  }
+}
+@media (max-width:944px) {
+
+  nav img{
+    left: 6%;
+    top:20px;
+    width: 130px;
+  }
+  nav ul .navlinking a{
+    font-size: 17px;
+  }
+
+/* Media Query FOr Navnar Ends Here */
+
+/* Media Query FOr Part1 Starts here */
+  .bg-img {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      /* Needed to position the navbar */
+      position: relative;
+      /* height: 92vh; */
+  }
+  .container {
+
+  }
+  .headline {
+      font-size: 45px;
+      color: white;
+      font-weight: bolder;
+  }
+  .subheadline {
+      display: none;
+  }
+  h2 {
+      font-size: 20px;
+      text-align: center;
+  }
+  .btn,
+  .btn-1 {
+      /* padding-left: 10px; */
+      /* padding-right: 0px; */
+      font-size: 11px;
+      margin-top: 20px;
+      padding: 10px;
+  }
+  .scrolling-active .nav  ul{
+    top: 70px;
+      /* background-color: #0007; */
+  }
+
+  /* Part1 Ends Here */
+
+
+
+
+
+  /* Media Query for Part2 Starts Here */
+  #container1 {
+      width: 100%;
+      margin: auto;
+      height: auto;
+      background: #696969;
+      overflow: auto;
+      text-align: center;
+      height: 180vh;
+      color: #fff;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+  }
+  #container1 .lefts {
+      text-align: center;
+      width: 100%;
+  }
+  #container1 .rights {
+      text-align: left;
+      width: 100%;
+      margin-top: 90px;
+  }
+  .lines1 {
+      background-color: red;
+      height: 4px;
+      width: 30px;
+      /* opacity: 0; */
+      margin-left: 4rem;
+  }
+  .headers {
+      padding-top: 2rem;
+      padding-left: 4rem;
+      padding-bottom: 3rem;
+      text-align: left;
+  }
+  .master,
+  .masterinner {
+      font-size: 20px;
+      text-align: left;
+      font-weight: 700;
+      padding-bottom: 0.4rem;
+  }
+  h3 {
+      font-size: 15px;
+      font-weight: 700;
+      padding-bottom: 2.5rem;
+  }
+  .masterinner1,
+  .masterinner2,
+  .masterinner3,
+  .masterinner4 {
+      font-size: 14px;
+      text-align: left;
+      font-weight: 400;
+      padding-bottom: 1.5rem
+  }
+  .rowbtn {
+      text-align: center;
+  }
+  .btn-2,
+  .btn-3 {
+      color: red;
+      text-align: center;
+      margin-right: 4rem;
+  }
+  .btn2,
+  .btn3 {
+      color: white;
+  }
+  a {
+      text-decoration: none;
+  }
+  .image1 {
+      padding-bottom: 10px;
+      height: 80%;
+      width: 70%;
+      text-align: center;
+      float: left;
+      padding-left: 49px;
+  }
+  /* Part2 Media Query Ends Here */
+  /* Part3 MediaQuery For Products Starts Here*/
+  .container3 {
+      height: 140vh;
+
+      font-style: serif;
+      text-align: center;
+  }
+
+  .card1,
+  .card2
+   {
+      margin-left: 20px;
+      /* margin-right: 20rem; */
+      margin-top: 30px;
+      float: left;
+      width: 100%;
+      /* border-radius: 10px; */
+  }
+  .images3 {
+      height: 300px;
+      width: 300px;
+      border-radius: 2px;
+      margin-right: 3rem;
+  }
+  .btns {
+      margin-top: 1rem;
+      margin-right: 8.8rem;
+      text-align: center;
+      border-color: grey;
+      opacity: 1;
+      justify-content: center;
+      padding: 0.5rem;
+      -ms-transform: translateX(60%);
+      transform: translateX(20%);
+      /* border-radius: 20px; */
+  }
+  .btns:hover {
+      background-color: #000;
+      transition: 0.6s;
+  }
+  .paragraph {
+      /* text-align: center; */
+      margin-right: 5rem;
+      text-align: justify;
+      margin-top: 2rem
+  }
+  /* Part3 MediaQuery for Product Ends Here */
+
+
+  /* Part4 Media Query For Contactus Starts Here */
+  .container4 {
+      /* text-align: center; */
+      width: 100%;
+      height: 300vh;
+      background-color: #bbb;
+  }
+  .container4 .leftmost {
+      float: left;
+      width: 90%;
+      margin-top: 30px;
+      background-color: black;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      height: 100vh;
+      height: 100vh;
+      /* height: 92vh */
+  }
+  .container4 .rightmost {
+      width: 90%;
+      margin-top: 30px;
+      margin-left: 2rem;
+      background-color: black;
+      margin-right: 2rem;
+      height: 100vh;
+      /* text-align: left; */
+  }
+  .contactform {
+      color: #eee;
+      /* text-align: left;*/
+      /* float: left; */
+      /* margin-left: 10rem; */
+      /* margin-right:13rem; */
+      /* position: relative; */
+      text-align: center;
+  }
+  .inputs {
+      margin-top: 30px;
+  }
+  .inputs label input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+  }
+  .messages textarea{
+    /* width: 75%; */
+    float: left;
+
+  }
+
+  /* textarea .messages{
+background-color: red;
+width: 300px;
+} */
+  #my-form-button{
+      /* height: 3rem; */
+      /* width: 8rem; */
+      text-align: center;
+  }
+
+  /* Parrt4 MediaQuery For Contactus Ends Here */
+  /* Media Query For Footer Starts Here */
+  .container2 {
+      width: 100%;
+      height: 120vh;
+      /* position:fixed; */
+  }
+  .container2 .left1 {
+      width: 100%;
+      margin-top: 6rem;
+  }
+  .container2 .left25 {
+      width: 100%;
+      text-align: left;
+  }
+  .container2 .right25 {
+      width: 100%;
+      margin-top: 5rem;
+  }
+  .container2 .right1 {
+      float: left;
+      width: 100%;
+  }
+  .texts1,
+  .texts2,
+  .texts {
+      margin-left: 3rem;
+  }
+  /* First Right */
+  .logos {
+      text-align: left;
+      margin-left: 3rem;
+  }
+  /* Media Query for footer ends here */
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MediaQuery For Mobile */
+@media (max-width:860px) {
+  label #navbutton{
+    display: block;
+    margin-left: 34rem;
+    float: right;
+  }
+  ul{
+    position: fixed;
+    /* width: 80%;
+    height: 60vh;
+    background: #0001; */
+    width: 70%;
+    height: 60vh;
+    /* background: #0001; */
+    background-color: #0008;
+    top:90px;
+    left: -100%;
+    text-align: center;
+    transition:all .5s;
+  }
+
+  nav ul .navlinking{
+    display: block;
+    margin: 50px 0;
+    line-height:8px;
+  }
+
+  nav ul .navlinking a{
+    font-size: 20px;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  #check:checked ~ label #navbutton{
+    display: none;
+  }
+  #check:checked ~ label #cancel{
+    display:block;
+  }
+/* Media Query For Navbar Ends Here */
+
+  /* Part1 Media Query Starts Here */
+  .bg-img {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      /* Needed to position the navbar */
+      position: relative;
+      /* height: 92vh; */
+  }
+  .container {
+    height: 10vh;
+  }
+  .heads{
+    opacity: 0;
+  }
+  .headline {
+      font-size: 25px;
+      color: white;
+      font-weight: bolder;
+      margin-top: -3rem;
+  }
+  .subheadline {
+      display: none;
+  }
+  h2 {
+      font-size: 15px;
+      text-align: center;
+  }
+  .btn,
+  .btn-1 {
+      /* padding-left: 10px; */
+      /* padding-right: 0px; */
+      font-size: 10px;
+      margin-top: 30px;
+      padding: 8px;
+  }
+  /* Part1 Ends Here */
+
+
+
+  /* Part2 Media Query Starts Here */
+
+
+  #container1 {
+      width: 100%;
+      margin: auto;
+      height: auto;
+      background: #696969;
+      overflow: auto;
+      text-align: center;
+      height: 190vh;
+      color: #fff;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+  }
+  #container1 .lefts {
+      text-align: center;
+      width: 100%;
+  }
+  #container1 .rights {
+      text-align: left;
+      width: 100%;
+      margin-top: 90px;
+  }
+  .lines1 {
+      background-color: red;
+      height: 4px;
+      width: 30px;
+      /* opacity: 0; */
+      margin-left: 2rem;
+  }
+  .headers {
+      padding-top: 2rem;
+      padding-left: 1.5rem;
+      padding-bottom: 3rem;
+      text-align: left;
+  }
+  .master,
+  .masterinner {
+      font-size: 15px;
+      text-align: left;
+      font-weight: 700;
+      padding-bottom: 0.4rem;
+  }
+  h3 {
+      font-size: 12px;
+      font-weight: 700;
+      padding-bottom: 2.5rem;
+  }
+  .masterinner1,
+  .masterinner2,
+  .masterinner3,
+  .masterinner4 {
+      font-size: 15px;
+      text-align: left;
+      font-weight: 300;
+      padding-bottom: 2rem;
+      padding-right:0px;
+      justify-content: center;
+  }
+  .rowbtn {
+      text-align: center;
+  }
+  .btn-2,
+  .btn-3 {
+      color: red;
+      text-align: center;
+      margin-right: 3rem;
+  }
+  .btn2,
+  .btn3 {
+      color: white;
+  }
+  a {
+      text-decoration: none;
+  }
+  .image1 {
+      padding-bottom: 10px;
+      height: 80%;
+      width: 70%;
+      text-align: center;
+      float: left;
+      padding-left: 49px;
+  }
+
+
+  /* Part2 Media Query Ends Here */
+
+
+
+  /* Part3 MediaQuery For Products Starts Here*/
+  .container3 {
+      height: 110vh;
+      font-style: serif;
+      text-align: center;
+
+  }
+  .heading {
+      font-size: 20px;
+      font-weight: 100;
+  }
+  .beforeproduct{
+    /* margin-left: 3rem; */
+    text-align: center;
+  }
+  .beforeproduct .subheading {
+      font-size: 15px;
+      /* font-weight: 1000rem; */
+      text-align: center;
+      justify-content: center;
+  }
+  .card1,
+  .card2,
+  .card3 {
+      margin-left: 3rem;
+      margin-right: 10px;
+      margin-top: 30px;
+      float: left;
+      width: 80%;
+      text-align: left;
+      /* border-radius: 10px; */
+  }
+  .images3 {
+      height: 200px;
+      width: 200px;
+      border-radius: 2px;
+      margin-right: 3rem;
+  }
+  .btns {
+      margin-top: 1rem;
+      margin-right: 1.8rem;
+      text-align: center;
+      border-color: grey;
+      opacity: 1;
+      justify-content: center;
+      padding: 0.4rem;
+      width: 160px;
+      -ms-transform: translateX(10%);
+      transform: translateX(10%);
+      /* border-radius: 20px; */
+  }
+  .btns:hover {
+      /* transition: 0.6s; */
+      background-color:rgba(0,0,0,1);
+      /* text-align: center; */
+
+  }
+  .paragraph {
+
+      /* text-align: justify; */
+      /* justify-content: center; */
+      /* margin-left: 2rem; */
+      /* float: left; */
+      font-size: 12px;
+      /* margin-right: 1rem; */
+      /* margin-left: 4rem; */
+      text-align: center;
+      margin-top: 1rem;
+  }
+  .caption{
+    text-align:left;
+    margin-left: 2rem;
+  }
+  /* Part3 MediaQuery for Product Ends Here */
+
+
+  /* Part4 Media Query For Contactus Starts Here */
+  .container4 {
+      /* text-align: center; */
+      width: 100%;
+      height: 300vh;
+      background-color: #bbb;
+  }
+  .container4 .leftmost {
+      float: left;
+      width: 80%;
+      margin-top: 30px;
+      background-color: black;
+      margin-left: 2rem;
+      margin-right: 1rem;
+      /* height: 100vh; */
+      /* height: 100vh; */
+      height: 45vh;
+  }
+   .mapings{
+    height: 30vh;
+    width: 40vh;
+  }
+  .container4 .rightmost {
+      width: 80%;
+      margin-top: 30px;
+      background-color: black;
+      margin-right: 1rem;
+      height: 100vh;
+      text-align: left;
+      margin-left: 2rem;
+      /* text-align: left; */
+  }
+  .contactform {
+      color: #eee;
+      /* text-align: left;*/
+      float: left;
+      margin-left: 2.5rem;
+      /* margin-right:13rem; */
+      /* position: relative; */
+      text-align: center;
+      width: 50%;
+  }
+  .inputs {
+      margin-top: 30px;
+  }
+  /* .inputs label input { */
+      /* width: 100px; */
+      /* padding: 10px; */
+      /* margin-bottom: 20px; */
+      /* margin-right: 2rem; */
+      /* text-align: left; */
+      /* float: left; */
+  /* }/ */
+  .headings{
+    font-size: 20px;
+  }
+  .messages textarea{
+    width: 100%;
+    float: left;
+  }
+
+  /* textarea .messages{
+background-color: red;
+width: 300px;
+} */
+
+  #my-form-status{
+    margin-top:13px;
+    font-size: 1rem;
+    color:white;
+    /* text-align: center; */
+  }
+  /* Parrt4 MediaQuery For Contactus Ends Here */
+  /* Media Query For Footer Starts Here */
+  .container2 {
+      width: 100%;
+      height: 120vh;
+      /* position:fixed; */
+  }
+  .container2 .left1 {
+      width: 100%;
+      margin-top: 6rem;
+  }
+  .container2 .left25 {
+      width: 100%;
+      text-align: left;
+  }
+  .container2 .right25 {
+      width: 100%;
+      margin-top: 5rem;
+  }
+  .container2 .right1 {
+      float: left;
+      width: 100%;
+  }
+  .texts1,
+  .texts2,
+  .texts {
+      margin-left: 3rem;
+  }
+  /* First Right */
+  .logos {
+      text-align: left;
+      margin-left: 3rem;
+  }
+  .images2{
+    width: 32px;
+    height: 32px;
+      margin-right: 3px;
+  }
+
+  /* Media Query for footer ends here */
+
+
+
+}
+/* Media Query For Navbar Ends Here */
